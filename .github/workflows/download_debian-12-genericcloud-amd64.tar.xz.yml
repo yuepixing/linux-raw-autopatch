@@ -11,8 +11,7 @@ jobs:
         run: mkdir -p images
 
       - name: Download into images/
-        run: curl -Lo images/debian-12-genericcloud-amd64.tar.xz \
-          https://cdimage.debian.org/images/cloud/bookworm/latest/debian-12-genericcloud-amd64.tar.xz
+        run: curl -Lo images/debian-12-genericcloud-amd64.tar.xz https://cdimage.debian.org/images/cloud/bookworm/latest/debian-12-genericcloud-amd64.tar.xz
 
       - name: Upload to GitHub Release
         uses: softprops/action-gh-release@v1
